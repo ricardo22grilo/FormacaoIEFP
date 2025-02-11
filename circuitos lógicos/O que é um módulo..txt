@@ -1,3 +1,0 @@
-O que é um módulo em eletrónica?
-
-Um módulo em eletrónica refere-se a um componente ou conjunto de componentes eletrónicos integrados que desempenham uma função específica dentro de um sistema maior. Normalmente, os módulos são projetados para serem unidades independentes e fáceis de integrar, simplificando o desenvolvimento e manutenção de circuitos ou dispositivos. Por exemplo, um módulo pode incluir sensores, atuadores, reguladores de tensão, amplificadores ou microcontroladores, entre outros, encapsulados de forma a facilitar a sua ligação e funcionamento com outros elementos de um circuito.
