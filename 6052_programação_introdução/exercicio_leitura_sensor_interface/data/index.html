@@ -1,0 +1,49 @@
+pagina = R"rawliteral(
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>interface</title>
+     <style>
+          html {
+             font-family: Times;
+             display: inline-block;
+             margin: 0px auto;
+             text-align: center;
+         }
+
+          .button {
+             background-color: #4CAF50;
+             border: none;
+             color: white;
+              padding: 16px 40px;
+             text-decoration: none;
+             font-size: 30px; 
+              margin: 2px;
+
+          }
+      </style>
+  </head>
+  <body>
+     <h1>Leitura do Sensor</h1>
+      <p>
+          <a href="/button/on">
+              <button class="button" id = "btn">ON</button>
+          </a>
+      </p>
+  )rawliteral";
+
+  
+  pagina += "<p><strong>Temperatura:</strong> " + String(dht11.temperatura) + " °C</p>";
+  pagina += "<p><strong>Humidade:</strong> " + String(dht11.humidade) + " %</p>";
+
+  // Close the page
+  pagina += R"rawliteral(
+  </body>
+  </html>
+  )rawliteral";
+
+  // Send it to the client
+  server.send(200, "text/html", pagina);
+}
